@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taskora | My Tasks</title>
+</head>
+<body>
+    <h1>Taskora</h1>
+
+    <p>Welcome, {{ request.user.username }}!</p>
+
+    <a href="{% url 'task_create' %}">+ Create Task</a>
+
+    <form method="post" action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit">Log out</button>
+    </form>
+
+    <h2>My Tasks</h2>
+
+    {% for task in tasks %}
+        <article>
+            <h3>{{ task.title }}</h3>
+            <p>{{ task.description }}</p>
+
+            <p>
+                Status:
+                {% if task.is_completed %}
+                    Completed
+                {% else %}
+                    Pending
+                {% endif %}
+            </p>
+
+            <a href="{% url 'task_edit' task.pk %}">Edit</a>
+            <a href="{% url 'task_delete' task.pk %}">Delete</a>
+        </article>
+    {% empty %}
+        <p>No tasks yet. Create your first task!</p>
+    {% endfor %}
+</body>
+</html>

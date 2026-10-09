@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page_title }} | Taskora</title>
+</head>
+<body>
+    <h1>{{ page_title }}</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <button type="submit">Save Task</button>
+    </form>
+
+    <a href="{% url 'task_list' %}">Back to dashboard</a>
+</body>
+</html>
