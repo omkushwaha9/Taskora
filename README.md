@@ -150,7 +150,7 @@ python manage.py test
 
 **Om Kushwaha**
 
-- **Portfolio:** [Visit My Portfolio](YOUR_PORTFOLIO_URL)
+- **Portfolio:** [Visit My Portfolio](https://omkushwaha.in/)
 - **GitHub:** [@omkushwaha9](https://github.com/omkushwaha9)
 - **LinkedIn:** [Om Kushwaha](https://www.linkedin.com/in/omkushwaha9/)
 
