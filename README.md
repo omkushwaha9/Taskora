@@ -150,8 +150,9 @@ python manage.py test
 
 **Om Kushwaha**
 
-- [GitHub](https://github.com/omkushwaha9)
-- [LinkedIn](https://www.linkedin.com/in/omkushwaha9/)
+- **Portfolio:** [Visit My Portfolio](YOUR_PORTFOLIO_URL)
+- **GitHub:** [@omkushwaha9](https://github.com/omkushwaha9)
+- **LinkedIn:** [Om Kushwaha](https://www.linkedin.com/in/omkushwaha9/)
 
 ## License
 
